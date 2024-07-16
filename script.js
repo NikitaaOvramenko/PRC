@@ -63,6 +63,14 @@ function buttonF(link,appendTo){
 }
 
 
+function reset(){
+    humanScore = 0;
+    botScore = 0;
+    document.getElementById("rockbtn").disabled = false;
+    document.getElementById("paperbtn").disabled = false;
+    document.getElementById("scissorbtn").disabled = false;
+}
+
 function endG(){
     if(humanScore == 5 || botScore == 5){
 
