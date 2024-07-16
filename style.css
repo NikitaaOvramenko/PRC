@@ -1,22 +1,25 @@
-body{
+body {
 
-    height: 100vh;    
-    background: #0f0c29;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    background: #0f0c29;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 
 }
 
-h1{
-    color:antiquewhite;
+h1 {
+    color: antiquewhite;
     text-align: center;
-    
+
 }
 
-main{
+main {
     border-color: antiquewhite;
     border-radius: 10px;
     border-style: solid;
@@ -24,22 +27,22 @@ main{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    
+
 }
 
-.buttons{
+.buttons {
     display: flex;
     justify-content: center;
-    align-items:center;
-    gap: 30px;    
-    flex-basis:50%;
-    
+    align-items: center;
+    gap: 30px;
+    flex-basis: 50%;
+
 
 
 }
 
-button{
-    
+.b {
+
     background-color: #302b63;
     border-style: solid;
     border-radius: 10px;
@@ -48,24 +51,25 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
-.upper{
+.upper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex-basis: 50%;
 }
 
-.score{
+.score {
     display: flex;
     justify-content: space-between;
     flex-basis: 50px;
-    
+
 }
 
-.score .human,.score .robot{
+.score .human,
+.score .robot {
     display: flex;
     flex-basis: 50%;
     text-align: center;
@@ -74,17 +78,28 @@ button{
 
 }
 
-.textScore{
+.textScore {
     color: antiquewhite;
     font-weight: 800;
 }
 
+.attackCards {
+    display: flex;
+    flex-basis: 100%;
+}
+
+button:active{
+    background: rgb(231,234,12);
+    background: linear-gradient(0deg, rgba(231,234,12,1) 0%, rgba(207,200,19,1) 54%, rgba(199,206,38,1) 68%); 
+}
+
+.attackCards .human,
+.attackCards .robot,
+.attackCards .middle {
 
 
-
-
-
-
-
-
-
+    display: flex;
+    flex-basis: 33.33%;
+    justify-content: center;
+    align-items: center;
+}

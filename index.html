@@ -12,30 +12,47 @@
 <body>
 
     <h1>Rock Paper Scissors</h1>
-    <script src="./script.js"></script>
+    
 
     <main>
         <div class="upper">
             <div class="score">
                 <div class="human">
-                    <div class="textScore">Your Score:</div></div>
+                    <div class="textScore", id ="hs">Your Score:</div>
+                </div>
                 <div class="robot">
-                    <div class="textScore">Comp Score:</div>
+                    <div class="textScore" id ="rs">Comp Score:</div>
+                </div>
+
+
+            </div>
+
+            <div class="attackCards" >
+
+                <div class="human" id="humanAttack">
+
+                </div>
+
+                <div class="middle"></div>
+
+                <div class="robot" id="robotAttack">
+
                 </div>
             </div>
 
-            <div class="hands">
 
-            </div>
-            
+
         </div>
         <div class="buttons">
-            <button class="b one"><img src="./pics/rock.png" height="100px" width="100px"></button>
-            <button class="b two"><img src="./pics/paper.png" height="100px" width="100px" alt=""></button>
-            <button class="b three"><img src="./pics/scissors_icon.png" height="50px" width="50px"></button>
+            <button class="b one" id="rockbtn"><img src="./pics/assets1/rock.png" height="60px" width="70px"></button>
+            <button class="b two" id="paperbtn"><img src="./pics/assets1/paper.png" height="60px" width="70px" alt=""></button>
+            <button class="b three" id="scissorbtn"><img src="./pics/assets1/scissor.png" height="60px" width="60px"></button>
         </div>
 
     </main>
+
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
